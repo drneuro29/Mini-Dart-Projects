@@ -9,10 +9,12 @@ String prompt(String promptText) {
 void main() {
   String number = "7";
   String guess = "";
-
+  guessCount = 0;
+    
   while (guess != number) {
     guess = prompt("Enter a number: ");
+    guessCount++;
   }
 
-  print("You won!");
+  print("You won in ${guessCount} guesses!");
 }
